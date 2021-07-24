@@ -1,0 +1,108 @@
+<resources>
+    <string name="app_name">RSPKUmobile</string>
+    <string name="app_title">RS PKU Kutoarjo</string>
+
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="openDrawer">open_drawer</string>
+    <string name="closeDrawer">close_drawer</string>
+
+    <string name="action_settings">Settings</string>
+
+
+    <!-- Navigation Drawer menu labels -->
+    <string name="nav_home">Beranda</string>
+    <string name="nav_booking">Booking</string>
+    <string name="nav_consultation">Konsultasi</string>
+    <string name="nav_notifications">Pemberitahuan</string>
+    <string name="about">Tentang Kami</string>
+    <string name="setting">Pengaturan</string>
+    <string name="privacy_policy">Privacy Policy</string>
+    <string name="action_mark_all_read">bersihkan</string>
+    <string name="action_clear_all">hapus</string>
+    <string name="sign_in_done">proses berhasil, selamat datang</string>
+    <string name="sign_out_done">proses log out berhasil</string>
+    <string name="layout_sign_in_display_name">Nama Panggilan</string>
+
+    <!-- Toolbar titles when navigation menu item is selected -->
+    <string-array name="nav_item_activity_titles">
+        <item>Beranda</item>
+        <item>Booking</item>
+        <item>Konsultasi</item>
+        <item>Pemberitahuan</item>
+        <!--<item>Tentang Kami</item>-->
+    </string-array>
+
+    <string-array name="hari">
+        <item>Ahad</item>
+        <item>Senin</item>
+        <item>Selasa</item>
+        <item>Rabu</item>
+        <item>Kamis</item>
+        <item>Jumat</item>
+        <item>Sabtu</item>
+    </string-array>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+
+    <string name="salam">Assalamu\'alaikum</string>
+    <string name="intro">Aplikasi Booking Layanan Berobat\nPKU Muhammadiah Kutoarjo</string>
+    <string name="tentang_nama">Rumah Sakit Muhammadiyah Kutoarjo</string>
+    <string name="visi">VISI</string>
+    <string name="misi">MISI</string>
+    <string name="visi_text">Menjadikan PKU Muhammadiyah Kutoarjo sebagai Rumah Sakit Islam terdepan dalam pelayanan.</string>
+    <string name="misi_text">1. Menjadi unit pelayanan medis yang berdasar Ukhuwah Islamiyah\n2. Menjadi unit pelayanan medis dengan pelayanan prima\n3. Melayani segala lapisan usia dengan pendekatan keluarga\n4. Mengutamakan pelayanan cepat, sederhana, terbuka, ramah dan efisien.</string>
+    <string name="alamat"> Jl. Kauman 1 No. 6 Kutoarjo</string>
+    <string name="contact">Telp. (0275) 642439</string>
+    <string name="article_menu_title">Semua Artikel</string>
+    <string name="article_label">Artikel Kesehatan</string>
+    <string name="activity_tips">Tips Kesehatan</string>
+    <string name="set_booking">Antri</string>
+    <string name="set_cancle">batal</string>
+    <string name="set_back">kembali</string>
+    <string name="search">cari</string>
+    <string name="hint_request_topic">Judul baru</string>
+    <string name="hint_request_content">Pertanyaan</string>
+    <string name="login_doctor">masuk sebagai dokter</string>
+    <string name="login_canceled">anda membatalkan proses login</string>
+    <string name="booking_empty">tidak ada booking</string>
+    <!--<string name="login_doctor"><![CDATA[<u>masuk sebagai dokter</u>]]></string>-->
+    <string name="notifications">Pemberitahuan</string>
+    <string name="sound">Suara</string>
+    <string name="sound_note">anda akan tetap mendapatkan pemberitahuna bila "suara" dimatikan</string>
+    <string name="entry_not_found">input yang anda masukan tidak ditemukan</string>
+    <string name="login_logout_btn">login/logout button</string>
+
+    <!-- Auth method picker -->
+    <string name="fui_sign_in_with_google" translation_description="Sign in button text">Log in dengan Google</string>
+    <string name="fui_sign_in_with_phone" translation_description="Sign in button text">Log in dengan nomer hp</string>
+
+    <!-- Phone number auth -->
+    <string name="fui_verify_phone_number_title" translation_description="Phone number entry form title">Masukan Nomer Anda</string>
+    <string name="fui_invalid_phone_number" translation_description="Inline error when phone number entered is invalid">Nomer yang anda masukan tidak valid</string>
+    <string name="fui_enter_confirmation_code" translation_description="Phone number verification code entry form title">Masukan 6 digit kode yang dikirim ke nomer yang anda gunakan untuk login</string>
+    <string name="fui_resend_code_in" translation_description="Countdown timer text that the user needs to wait for before attempting to resend verification sms">Mengirim ulang kode dalam 0:%02d</string>
+    <string name="fui_verify_your_phone_title" translation_description="Button text to complete phone number verification">Verifikasi nomer anda</string>
+    <string name="fui_verifying" translation_description="Progress dialog text while phone number is being verified">Sedang memvirifikasi…</string>
+    <string name="fui_retrieving_sms" translation_description="Progress dialog text when sms is being retrieved before auto-submit">Memproses sms…</string>
+    <string name="fui_incorrect_code_dialog_body" translation_description="Inline error when incorrect sms verification code is being used to verify">Kode salah. Silahkan coba lagi.</string>
+    <string name="fui_incorrect_code_dialog_positive_button_text" translation_description="Text to dismiss error alert dialog">OK</string>
+    <string name="fui_error_too_many_attempts" translation_description="Error message when the phone number has been used too many times">Terlalu banyak percobaan untuk masuk menggunakan nomer ini</string>
+    <string name="fui_error_quota_exceeded" translation_description="Error message when the Firebase project's quota has been exceeded.">Terdapat kesalahan dalam memverifikasi nomer anda</string>
+    <string name="fui_error_session_expired" translation_description="Error message when SMS confirmation code has expired.">Kode yang anda gunakan sudah tidak valid</string>
+    <string name="fui_sign_in_with_phone_number" translation_description="Label for phone number input form">Masuk menggunakan nomer hp</string>
+    <string name="fui_done" translation_description="Progress dialog success transition once sms is sent">Selesai</string>
+    <string name="fui_verified" translation_description="Progress dialog success transition when phone number was verified">Verified!</string>
+    <string name="fui_code_sent" translation_description="Progress dialog success transition once sms is sent">Kode telah dikirim!</string>
+    <string name="fui_resending" translation_description="Progress dialog text when user clicks on resend sms">Mengirim ulang kode…</string>
+    <string name="fui_resend_code" translation_description="Link text to resend verification sms">Kirim ulang kode</string>
+    <string name="fui_verify_phone_number" translation_description="Button text to submit confirmation code and complete phone verification">Verifikasi nomer</string>
+    <string name="fui_continue_phone_login" translation_description="Button text to submit phone number and send sms">Lanjutkan</string>
+    <string name="fui_sms_terms_of_service" translation_description="Fine print warning displayed below Verify Phone Number button">Ketuk “%1$s”, sebuah sms berisi kode akan dikirim ke nomer yang anda masukan. pastikan anda tidak memasukan angka "0" didepan nomer anda. "81234567xxx.</string>
+
+    <string name="login_doctor_hint">Masukan unip dan password pegawai anda seperti yang terdapat pada sistem informasi rumah sakit</string>
+    <string name="show_con_edit_question">Artikel Kesehatan</string>
+
+</resources>

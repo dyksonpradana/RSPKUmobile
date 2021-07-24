@@ -1,0 +1,123 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/container_article"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="10dp">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/container2">
+
+            <TextView
+                android:id="@+id/nama"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/tentang_nama"
+                android:textAllCaps="true"
+                android:textAppearance="@style/TextAppearance.AppCompat.Title"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                tools:text="@string/tentang_nama" />
+
+            <TextView
+                android:id="@+id/alamat"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignLeft="@+id/nama"
+                android:layout_below="@+id/nama"
+                android:layout_toEndOf="@+id/nama"
+                android:layout_toRightOf="@+id/nama"
+                android:drawableLeft="@drawable/pin2red"
+                android:linksClickable="true"
+                android:text="@string/alamat"
+                android:textAppearance="@style/TextAppearance.AppCompat.Body2"
+                android:textColorLink="#FF001EFF" />
+
+            <TextView
+                android:id="@+id/contact"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignLeft="@id/alamat"
+                android:layout_below="@id/alamat"
+                android:text="@string/contact"
+                android:textAppearance="@style/TextAppearance.AppCompat.Body2" />
+
+            <TextView
+                android:id="@+id/visi"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_below="@+id/contact"
+                android:layout_marginTop="20dp"
+                android:text="@string/visi"
+                android:textAppearance="@style/TextAppearance.AppCompat.Title" />
+
+            <TextView
+                android:id="@+id/textvisi"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignLeft="@+id/visi"
+                android:layout_alignStart="@+id/visi"
+                android:layout_below="@+id/visi"
+                android:layout_marginTop="5dp"
+                android:text="@string/visi_text"
+                android:textAppearance="@style/TextAppearance.Design.Hint"
+                android:textColor="#666666"
+                android:textSize="14sp" />
+
+            <TextView
+                android:id="@+id/misi"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_below="@+id/textvisi"
+                android:layout_marginTop="20dp"
+                android:text="@string/misi"
+                android:textAppearance="@style/TextAppearance.AppCompat.Title" />
+
+            <TextView
+                android:id="@+id/textmisi"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignLeft="@+id/misi"
+                android:layout_alignStart="@+id/misi"
+                android:layout_below="@+id/misi"
+                android:layout_marginTop="5dp"
+                android:text="@string/misi_text"
+                android:textSize="14sp" />
+
+            <TextView
+                android:id="@+id/kunjungi"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignLeft="@+id/textmisi"
+                android:layout_below="@+id/textmisi"
+                android:layout_marginTop="20dp"
+                android:text="kunjungi website kami di:"
+                android:textAllCaps="false"
+                android:textAppearance="@style/TextAppearance.AppCompat.Title"
+                android:textColor="#333333"
+                android:textSize="14sp"
+                android:textStyle="italic" />
+
+            <TextView
+                android:id="@+id/webAddress"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignLeft="@+id/kunjungi"
+                android:layout_below="@+id/kunjungi"
+                android:autoLink="all|web"
+                android:linksClickable="true"
+                android:onClick="openWeb"
+                android:text="link website"
+                android:textAppearance="@style/TextAppearance.Design.Hint"
+                android:textColor="#0000FF"
+                android:textColorLink="#0000FF"
+                android:textStyle="italic" />
+        </RelativeLayout>
+
+</RelativeLayout>

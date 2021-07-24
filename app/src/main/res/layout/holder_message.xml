@@ -1,0 +1,76 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:id="@+id/balloon"
+    android:layout_marginBottom="2dp"
+    android:paddingLeft="1dp"
+    android:paddingRight="1dp"
+    android:background="@drawable/balloon_other_user">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        android:id="@+id/user_token"
+        android:visibility="invisible"/>
+
+    <TextView
+        android:id="@+id/message_uid"
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        android:visibility="visible" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentStart="true"
+        android:id="@+id/message_display_name"
+        android:textStyle="normal|bold" />
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/message_display_name"
+        android:id="@+id/citation_balloon">
+
+        <TextView
+            android:id="@+id/message_citation_text"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+            android:textSize="16sp"
+            android:visibility="visible" />
+
+    </LinearLayout>
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        android:id="@+id/message_citation_from"
+        android:visibility="invisible"/>
+
+    <TextView
+        android:id="@+id/message_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/citation_balloon"
+        android:textColor="@android:color/black"
+        android:textSize="17sp"
+        android:typeface="sans" />
+
+    <TextView
+        android:id="@+id/message_time"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_below="@+id/message_text"
+        android:textColor="?attr/colorControlHighlight"
+        android:textSize="12sp"
+        android:typeface="sans"
+        tools:text="text" />
+
+</RelativeLayout>

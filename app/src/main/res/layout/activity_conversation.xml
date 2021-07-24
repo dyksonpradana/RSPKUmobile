@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.rspkumobile.activity.Conversation"
+    android:focusableInTouchMode="true">
+
+    <ImageView
+        android:id="@+id/logoBg"
+        android:layout_width="250dp"
+        android:layout_height="250dp"
+        android:layout_gravity="center"
+        android:layout_centerInParent="true"
+        android:background="@drawable/logo_rs"
+        android:contentDescription=""
+        android:fadeScrollbars="false"
+        tools:ignore="ContentDescription" />
+
+    <TextView
+        android:id="@+id/emptyTextView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="16dp"
+        android:text="no chat yet" />
+
+
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/list_of_messages"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/input_section"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/appBarLayout"
+        android:divider="@android:color/transparent"
+        android:dividerHeight="3dp"
+        android:paddingLeft="4dp"
+        android:paddingRight="4dp"
+        android:layout_marginTop="5dp"
+        app:layout_constraintHeight_default="wrap" />
+
+    <android.support.design.widget.FloatingActionButton
+
+        android:id="@+id/fab"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentEnd="true"
+        android:layout_gravity="center"
+        android:layout_margin="8dp"
+        android:layout_weight="1"
+        android:clickable="true"
+        android:src="@android:drawable/ic_menu_send"
+        android:tint="@android:color/white"
+        app:backgroundTint="@color/colorPrimaryDark"
+        app:elevation="3dp"
+        app:fabSize="mini"
+        app:rippleColor="@android:color/background_light" />
+
+    <android.support.design.widget.AppBarLayout
+        android:layout_width="match_parent"
+        android:theme="@style/AppTheme.AppBarOverlay"
+        android:layout_height="wrap_content"
+
+        app:menu="@menu/menu_conversation"
+        android:id="@+id/appBarLayout">
+    </android.support.design.widget.AppBarLayout>
+
+
+    <android.support.design.widget.TextInputLayout
+        android:id="@+id/input_section"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentStart="true"
+        android:layout_toLeftOf="@+id/fab"
+        android:background="@android:color/background_light">
+
+        <EditText
+            android:id="@+id/input"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentStart="true"
+            android:hint="Input" />
+
+    </android.support.design.widget.TextInputLayout>
+
+    <RelativeLayout
+        android:id="@+id/review_citation"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/input_section"
+        android:layout_alignParentStart="true"
+        android:layout_marginBottom="3dp"
+        android:layout_marginLeft="1dp"
+        android:layout_marginRight="1dp"
+        android:background="@drawable/balloon_quote_pop_up"
+        android:visibility="invisible">
+
+        <ImageView
+            android:id="@+id/citation_close"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentTop="true"
+            android:clickable="true"
+            android:visibility="visible"
+            app:srcCompat="@android:drawable/ic_notification_clear_all" />
+
+        <TextView
+            android:id="@+id/citation_text"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_toLeftOf="@id/citation_close"
+            android:textSize="16sp"
+            android:visibility="visible" />
+
+        <TextView
+            android:id="@+id/citation_from"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@+id/citation_text"
+            android:visibility="invisible" />
+    </RelativeLayout>
+
+</RelativeLayout>

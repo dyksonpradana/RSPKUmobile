@@ -1,0 +1,72 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.rspkumobile.drawer.Home">
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <ViewFlipper
+            android:id="@+id/flipper"
+            android:layout_width="match_parent"
+            android:layout_height="150dp"
+            android:autoStart="true"
+            android:flipInterval="5000">
+            </ViewFlipper>
+
+        <ImageView
+            android:id="@+id/btn_previous"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/flipper"
+            android:layout_centerVertical="true"
+            android:src="@drawable/btn_previous_normal" />
+
+        <ImageView
+            android:id="@+id/btn_next"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignRight="@+id/flipper"
+            android:layout_centerVertical="true"
+            android:src="@drawable/btn_next_normal" />
+
+        <ImageView
+            android:id="@+id/divider"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:scaleType="fitXY"
+            android:layout_below="@+id/flipper"
+            app:srcCompat="?attr/dividerHorizontal" />
+
+    </RelativeLayout>
+
+
+    <FrameLayout
+        android:id="@+id/container_article"
+        android:layout_below="@+id/text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        ></FrameLayout>
+
+    <ImageView
+        android:id="@+id/divider1"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginBottom="10dp"
+        android:layout_marginTop="5dp"
+        android:scaleType="fitXY"
+        app:srcCompat="?attr/dividerHorizontal" />
+
+    <FrameLayout
+        android:id="@+id/container_tips"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/text"
+        android:paddingLeft="2dp"
+        android:paddingRight="2dp"></FrameLayout>
+
+</LinearLayout>

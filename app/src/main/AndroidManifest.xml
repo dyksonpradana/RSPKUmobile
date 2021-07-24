@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.rspkumobile">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_title"
+        android:largeHeap="true"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity
+            android:name=".activity.SplashScreenActivity"
+            android:label="@string/app_name"
+            android:theme="@style/AppTheme.NoActionBar">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".activity.MainActivityDrawer"
+            android:label="@string/app_name"
+            android:theme="@style/AppTheme.NoActionBar"
+            android:windowSoftInputMode="adjustPan|stateHidden">
+            <meta-data
+                android:name="android.app.searchable"
+                android:resource="@xml/searchable"
+                android:value=".activity.MainActivityDrawer" />
+        </activity>
+        <activity
+            android:name=".activity.SignInActivity"
+            android:label="@string/app_title" />
+        <activity android:name=".activity.QueueActivity" />
+        <activity android:name=".activity.AboutUsActivity" />
+        <activity android:name=".activity.NewTopicReq" />
+        <activity android:name=".activity.Conversation" />
+        <activity android:name=".activity.ShowConvEdit"
+            android:label="@string/show_con_edit_question"/>
+
+        <receiver android:name=".util.MyReceiver" />
+
+        <!-- Firebase Notifications -->
+        <service android:name=".service.MyFirebaseMessagingService">
+            <intent-filter>
+                <action android:name="com.google.firebase.MESSAGING_EVENT" />
+            </intent-filter>
+        </service>
+        <service android:name=".service.MyFirebaseInstanceIDService">
+            <intent-filter>
+                <action android:name="com.google.firebase.INSTANCE_ID_EVENT" />
+            </intent-filter>
+        </service>
+        <!-- ./Firebase Notifications -->
+        <activity
+            android:name=".activity.ArticleMenuActivity"
+            android:label="@string/article_menu_title" />
+        <activity
+            android:name=".activity.ArticleReadActivity"
+            android:label="@string/article_label" />
+        <activity
+            android:name=".activity.TipsActivity"
+            android:label="@string/activity_tips" />
+        <activity
+            android:name=".activity.Setting"
+            android:label="@string/setting" />
+        <activity android:name=".activity.PhotoZoom"
+            android:theme="@style/AppTheme.NoActionBar">>
+            <!--<intent-filter>-->
+                <!--<action android:name="android.intent.action.MAIN" />-->
+
+                <!--<category android:name="android.intent.category.LAUNCHER" />-->
+            <!--</intent-filter>-->
+        </activity>
+    </application>
+
+</manifest>

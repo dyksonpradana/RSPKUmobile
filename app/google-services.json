@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "123094462261",
+    "firebase_url": "https://rs-pku-kutoarjo-fdb.firebaseio.com",
+    "project_id": "rs-pku-kutoarjo-fdb",
+    "storage_bucket": "rs-pku-kutoarjo-fdb.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:123094462261:android:b0acb299f4c2cf08",
+        "android_client_info": {
+          "package_name": "com.rspkumobile"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "123094462261-cgk8rsogq082rjjda1j6gch0nskk5lnp.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.rspkumobile",
+            "certificate_hash": "89e555f4beb58b9e76c97fdbfc53c4ee90956b3a"
+          }
+        },
+        {
+          "client_id": "123094462261-kece5r1p9pb7aefs5k3p39u7bv8ub4rn.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyA8kfIIA1kc413i270r9i5uyAIFig8yxY8"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "123094462261-kece5r1p9pb7aefs5k3p39u7bv8ub4rn.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

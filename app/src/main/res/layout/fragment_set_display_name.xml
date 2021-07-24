@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.rspkumobile.activity.SignInActivity">
+
+    <EditText
+        android:id="@+id/et_display_name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="Name Panggilan"
+        android:inputType="textPersonName" />
+
+    <TextView
+        android:id="@+id/login_doctor"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/login_doctor"
+        android:textAlignment="textEnd"
+        android:textAppearance="@style/TextAppearance.Compat.Notification.Line2"
+        android:textColor="@color/fui_linkColor"
+        android:textSize="14sp" />
+
+    <TextView
+        android:id="@+id/tv_invalid_et"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="3dp"
+        android:text="Anda belum menentukan nama panggilan anda"
+        android:textColor="@android:color/holo_red_dark"
+        android:visibility="invisible" />
+
+    <Button
+        android:id="@+id/btn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:background="@color/colorAccent"
+        android:text="Kirim"
+        android:textColor="@android:color/white" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="3dp"
+        android:layout_marginTop="20dp"
+        android:elevation="1dp"
+        android:lineSpacingExtra="8sp"
+        android:text="Silahkan masukan nama yang anda inginkan untuk memanggil anda"
+        android:textSize="18sp" />
+
+</LinearLayout>

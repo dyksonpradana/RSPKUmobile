@@ -1,0 +1,156 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.rspkumobile.drawer.Booking">
+
+    <!--<ScrollView-->
+        <!--android:layout_width="fill_parent"-->
+        <!--android:layout_height="fill_parent">-->
+        <!-- TODO: Update blank fragment layout -->
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:focusable="true"
+            android:focusableInTouchMode="true"
+            android:gravity="center">
+
+            <TextView
+                android:id="@+id/textView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="23dp"
+                android:text="isi formulir dibawah ini untuk memesan antrian" />
+
+            <TextView
+                android:id="@+id/tanggal"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignLeft="@+id/textView"
+                android:layout_alignStart="@+id/textView"
+                android:layout_below="@+id/textView"
+                android:layout_marginTop="48dp"
+                android:text="Tanggal"
+                android:textSize="18sp" />
+
+            <EditText
+                android:id="@+id/formTanggal"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+
+                android:layout_alignBaseline="@+id/tanggal"
+                android:layout_alignBottom="@+id/tanggal"
+                android:layout_alignEnd="@+id/textView"
+                android:layout_alignRight="@+id/textView"
+                android:ems="10"
+                android:enabled="true"
+                android:focusable="false"
+                android:focusableInTouchMode="false"
+                android:hint="Tanggal"
+                android:inputType="date"
+                android:onClick="setDate"
+                android:singleLine="false"
+                android:textColorHint="#8a000000" />
+
+            <TextView
+                android:id="@+id/lihatAntrian"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_above="@+id/formPukul"
+                android:layout_alignLeft="@+id/formTanggal"
+                android:layout_alignStart="@+id/formTanggal"
+                android:layout_below="@+id/formTanggal"
+                android:layout_marginLeft="2dp"
+                android:layout_marginTop="6dp"
+                android:text="Lihat antrian"
+                android:textColor="#0000FF"
+                android:textColorLink="#0000FF" />
+
+            <TextView
+                android:id="@+id/pukul"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignLeft="@+id/tanggal"
+                android:layout_alignStart="@+id/tanggal"
+                android:layout_below="@+id/formTanggal"
+                android:layout_marginTop="48dp"
+                android:text="Pukul"
+                android:textSize="18sp" />
+
+            <EditText
+                android:id="@+id/formPukul"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBaseline="@+id/pukul"
+                android:layout_alignBottom="@+id/pukul"
+                android:layout_alignRight="@+id/formTanggal"
+                android:clickable="false"
+                android:ems="10"
+                android:enabled="false"
+                android:focusable="false"
+                android:focusableInTouchMode="false"
+                android:hint="Jam"
+                android:inputType="time"
+                android:onClick="setTime"
+                android:textColorHint="#FFC1C1C1" />
+
+            <TextView
+                android:id="@+id/pasien"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignEnd="@+id/tanggal"
+                android:layout_alignLeft="@+id/pukul"
+                android:layout_alignRight="@+id/tanggal"
+                android:layout_alignStart="@+id/pukul"
+                android:layout_below="@+id/formPukul"
+                android:layout_marginTop="23dp"
+                android:text="Nama Pasien"
+                android:textSize="18sp" />
+
+            <EditText
+                android:id="@+id/formNama"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignLeft="@+id/formPukul"
+                android:layout_alignStart="@+id/formPukul"
+                android:layout_alignTop="@+id/pasien"
+                android:ems="10"
+                android:hint="Nama Lengkap"
+                android:inputType="textPersonName"
+                android:textColorHint="#8a000000" />
+
+            <TextView
+                android:id="@+id/jadwal"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/pasien"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="49dp"
+                android:clickable="true"
+                android:text="Lihat jadwal berobat"
+                android:textColor="#0000FF"
+                android:visibility="invisible" />
+
+            <Button
+                android:id="@+id/btnPesan"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/jadwal"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="32dp"
+                android:background="@drawable/button_background"
+                android:elevation="0dp"
+                android:text="Pesan"
+                android:textColor="#FFFFFFFF"
+                android:textSize="16sp" />
+
+        </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/barrier"></RelativeLayout>
+    <!--</ScrollView>-->
+</RelativeLayout>
